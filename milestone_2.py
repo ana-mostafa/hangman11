@@ -1,17 +1,15 @@
 import random
 
+def validate_input(guess):
+    if isinstance(guess, str) and len(guess) == 1 and guess.isalpha():
+        print('Good guess!')
+    else:
+        print('Oops! That is not a valid input')
 
-favorite_fruits = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Pineapple']
-word_list = favorite_fruits
-print(word_list)
+fruit_list = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Pineapple']
+selected_fruit = random.choice(fruit_list)
 
-word = random.choice(word_list)
+print(selected_fruit)
 
-print(word)
-
-guess = input("Please enter a single letter: ")
-
-if len(guess) == 1 and guess.isalpha():
-    print('Good guess!')
-else:
-    print('Oops! That is not a valid input')
+user_guess = input("Please enter a single letter: ")
+validate_input(user_guess)
