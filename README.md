@@ -13,3 +13,6 @@ Run the game by executing the script: python hangman_game.py
 
 Usage:
 Once the game is running, follow the prompts to input a single letter as your guess. Continue guessing letters until you successfully gu
+
+**Project Completion:**  
+The project development has been completed, offering a fully functional Hangman Game.
